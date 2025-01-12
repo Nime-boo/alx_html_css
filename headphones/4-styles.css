@@ -1,0 +1,441 @@
+/* Add the CSS styling here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+/* Header Styling */
+.header {
+  padding: 70px 0;
+}
+
+.header .container {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Push logo to the left, nav to the right */
+align-items: center; /* Vertically align items */
+padding: 20px 50px; /* Adjust padding to keep the header compact */
+position: absolute; /* Position it over the hero section */
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000; /* Ensure it stays above content */
+}
+
+.logo img {
+  width: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  color: white;
+}
+
+nav li {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none
+}
+
+.nav a:hover {
+  color: #FF6565;
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #fff;
+  font: bold;
+}
+
+.hero h2 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: #fff;
+  font: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background-color: #FF6565;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+}
+
+.container p {
+  margin-top: 20px; /* Space above the text */
+  font-size: 1rem; /* Adjust text size */
+  color: #fff; /* White text color */
+  line-height: 1.6; /* Adjust line spacing for readability */
+  text-align: center; /* Center align the text */
+  max-width: 800px; /* Optional: Limit the width for better readability */
+  margin-left: auto; /* Center align horizontally */
+  margin-right: auto; /* Center align horizontally */
+}
+
+.container2 p {
+  margin-top: 20px; /* Space above the text */
+  font-size: 1rem; /* Adjust text size */
+  color: black; /* black text color */
+  line-height: 1.6; /* Adjust line spacing for readability */
+  text-align: center; /* Center align the text */
+  max-width: 800px; /* Optional: Limit the width for better readability */
+  margin-left: auto; /* Center align horizontally */
+  margin-right: auto; /* Center align horizontally */
+}
+
+p.container {
+  padding-top: 3%;
+  margin-top: 500px; /* Space above the text */
+  font-size: 1rem; /* Adjust text size */
+  color: #fff; /* White text color */
+  line-height: 1.6; /* Adjust line spacing for readability */
+  text-align: center; /* Center align the text */
+  opacity: 0.9; /* Slight transparency */
+  max-width: 800px; /* Restrict the paragraph width */
+  margin-left: auto; /* Center align horizontally */
+  margin-right: auto; /* Center align horizontally */
+}
+
+
+
+
+/* What we do Section Styling */
+
+.what-we-do {
+  text-align: center;
+  height: 120vh;
+  background-color: #f9f9f9; /* Adjust as needed */
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.what-we-do p {
+  margin-top: 5%;
+  font-size: 1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  display: flex;
+  
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+
+  
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.service-item {
+  text-align: center;
+  flex: 1 1 200px;
+  max-width: 250px;
+}
+
+.box p {color:black; /* black text color */}
+
+.service-item i {
+  font-size: 3rem;
+  color: #FF6565; /* Icon color */
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.service-item p {
+  font-size: 0.9rem;
+  color: black;
+}
+.pass {color: black}
+
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.holberton_school-icon-ic_music {color: red; font-size: 500%;}
+.holberton_school-icon-ic_music p {color: black}
+.holberton_school-icon-ic_hearing {color: red; font-size: 500%;}
+.holberton_school-icon-ic_video {color: red; font-size: 500%}
+.holberton_school-icon-ic_sound {color: red; font-size: 500%}
+
+
+
+/* Our Results Section */
+.our-results {
+  background: url('images/headphones_hero_2.jpg') no-repeat center center/cover; /* Replace with the appropriate background image */
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center
+
+}
+
+.our-results h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.our-results p {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.results-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.container3 p{
+  margin-top: 20px; /* Space above the text */
+  font-size: 1rem; /* Adjust text size */
+  color: #fff; /* White text color */
+  line-height: 1.6; /* Adjust line spacing for readability */
+  text-align: center; /* Center align the text */
+  max-width: 800px; /* Optional: Limit the width for better readability */
+  margin-left: auto; /* Center align horizontally */
+  margin-right: auto; /* Center align horizontally */
+}
+.result-item {
+  text-align: center;
+  width: 150px;
+  height: 30%;
+}
+
+.result-icon {
+  background-color: #FF6565;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 30%;
+  display: inline-block;
+  clip-path: polygon(50% 0%, 100% 33%, 82% 100%, 18% 100%, 0% 33%);
+}
+
+.result-item p {
+  padding-top: 5%;
+  margin-top: 10%;
+  font-size: 0.5rem;
+  font-weight: bold;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.contact-us {
+  
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  color: #333;
+
+}
+
+.contact-us h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #666;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #FF6565;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.cta-btn {
+  background-color: #FF6565;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: #ff4c4c;
+}
+
+
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* One column layout */
+    gap: 20px; /* Add vertical space between sections */
+    width: 100%; /* Full width */
+  }
+
+  .section {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    width: 100%; /* Full width */
+  }
+  
+  .Footer {
+    background-color: #03043a;
+    padding: 20px 0;
+  }
+  
+  .container4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo1 h1 {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .logo1 img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    margin-right: 10px;
+  }
+  
+  .nav1 ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav1 ul sub {
+    display: flex;
+  }
+  
+  .nav1 ul sub li {
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+  }
